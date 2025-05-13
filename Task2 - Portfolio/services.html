@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>My Services - MERN Stack Developer Portfolio</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  .container {
+    max-width: 350px;
+    margin:auto;
+    padding: 20px;
+  }
+  header {
+    text-align: center;
+    /* justify-content: center; */
+
+    margin-bottom: 24px;
+  }
+  header h1 {
+    font-weight: 900;
+    color:white;
+    font-size: 2.2rem;
+    margin-bottom: 6px;
+  }
+  header p {
+    color: white;
+    font-size: 1rem;
+  }
+  .services {
+    display:flex;
+    /* gap: 50px; */
+    margin-left: 30px;
+  }
+  .service-card {
+    background-color: rgb(25, 25, 53);
+    border-radius: 14px;
+    padding: 22px 18px;
+    box-shadow: 0 5px 18px rgba(30, 64, 175, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    /* width: 200px; */
+    max-width: 300px;
+    margin: 30px;
+  }
+  .service-card:hover,
+  .service-card:focus-within {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(30, 64, 175, 0.25);
+    outline: none;
+  }
+  .service-icon {
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  .service-icon svg {
+    width: 48px;
+    height: 48px;
+    fill: white;
+  }
+  img{
+    width: 130px;
+    height: 50px;
+  }
+  .service-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: white;
+  }
+  .service-desc {
+    font-size: 1rem;
+    color: white;
+  }
+.main{
+    display: flex;
+  }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+  <div class="container" role="main">
+    <header>
+      <h1>My Services</h1>
+      <p>MERN Stack Development | Web Design | Communication | GitHub & More</p>
+    </header>
+  </div>
+  <div class="main">
+     <section class="services" aria-label="List of services offered">
+
+      <!-- MERN Stack Development -->
+      <article class="service-card" tabindex="0">
+        <div class="service-icon" aria-hidden="true">
+          <img src="MERN-logo.png" alt="">
+        </div>
+        <h2 class="service-title">MERN Stack Development</h2>
+        <p class="service-desc">Building scalable full-stack web applications using MongoDB, Express, React, and Node.js.</p>
+      </article>
+
+      <!-- Modern Web Design -->
+      <article class="service-card" tabindex="0">
+        <div class="service-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+            <path fill="#1e40af" d="M49 12l3 3-20 20-3-3z"/>
+            <path fill="#1e40af" d="M39 22l7 7-6 6-7-7z"/>
+            <path fill="#1e40af" d="M15 37l12-12 8 8-12 12z"/>
+            <circle cx="25" cy="39" r="4" fill="#1e40af"/>
+          </svg>
+        </div>
+        <h2 class="service-title">Modern Web Design</h2>
+        <p class="service-desc">Creating elegant and user-friendly designs that emphasize usability and aesthetics.</p>
+      </article>
+      <!-- GitHub & Version Control -->
+      <article class="service-card" tabindex="0">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="#1e40af" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 .5C5.648.5.5 5.645.5 12.002c0 5.092 3.292 9.417 7.86 10.956.574.106.784-.249.784-.555 0-.273-.01-1-.016-1.963-3.194.693-3.87-1.54-3.87-1.54-.523-1.33-1.275-1.685-1.275-1.685-1.042-.712.08-.698.08-.698 1.154.083 1.76 1.184 1.76 1.184 1.025 1.756 2.69 1.249 3.344.954.103-.743.4-1.25.727-1.537-2.55-.295-5.235-1.273-5.235-5.67 0-1.252.448-2.275 1.182-3.08-.117-.295-.513-1.48.114-3.087 0 0 .963-.31 3.157 1.176a11.04 11.04 0 0 1 2.875-.39 11.03 11.03 0 0 1 2.874.39c2.192-1.486 3.155-1.177 3.155-1.177.63 1.609.234 2.792.116 3.088.735.807 1.182 1.828 1.182 3.08 0 4.406-2.693 5.372-5.26 5.662.41.354.773 1.05.773 2.117 0 1.528-.015 2.763-.015 3.136 0 .31.21.666.791.553C20.712 21.41 24 17.085 24 12.002 24 5.645 18.35.5 12 .5z"/>
+          </svg>
+        </div>
+        <h2 class="service-title">GitHub & Version Control</h2>
+        <p class="service-desc">Expertise in using Git and GitHub to manage codebase and collaborate effectively on projects.</p>
+      </article>
+
+       <!-- C Language -->
+      <article class="service-card" tabindex="0">
+        <div class="service-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+            <rect x="14" y="14" width="36" height="36" rx="4" ry="4" fill="#1e40af"/>
+            <text x="32" y="46" text-anchor="middle" font-size="26" font-family="monospace" fill="#fff" font-weight="700">C</text>
+          </svg>
+        </div>
+        <h2 class="service-title">C Language</h2>
+        <p class="service-desc">Solid foundation in C programming for efficient low-level problem solving and embedded systems.</p>
+      </article>
+    </section>
+  </div>
+  <div class="main">
+    <section class="services">
+         <!-- Effective Communication -->
+      <article class="service-card" tabindex="0">
+        <div class="service-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+            <path fill="#1e40af" d="M12 16h40v24H26l-14 14z"/>
+            <path stroke="#071a52" stroke-width="2" d="M12 16h40v24H26l-14 14z" fill="none"/>
+            <circle cx="30" cy="28" r="3" fill="#fff"/>
+            <circle cx="40" cy="28" r="3" fill="#fff"/>
+          </svg>
+        </div>
+        <h2 class="service-title">Effective Communication</h2>
+        <p class="service-desc">Strong verbal and written communication skills to collaborate smoothly with teams and clients.</p>
+      </article>
+
+      <!-- Teamwork -->
+      <article class="service-card" tabindex="0">
+        <div class="service-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+            <circle cx="20" cy="24" r="8" fill="#1e40af"/>
+            <circle cx="44" cy="24" r="8" fill="#1e40af"/>
+            <path fill="#1e40af" d="M12 40h40v6a6 6 0 0 1-6 6H18a6 6 0 0 1-6-6z"/>
+          </svg>
+        </div>
+        <h2 class="service-title">Teamwork</h2>
+        <p class="service-desc">Collaborative and adaptable team player who thrives in dynamic development environments.</p>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
+
