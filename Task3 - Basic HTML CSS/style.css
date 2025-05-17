@@ -1,0 +1,39 @@
+h1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: xx-large;
+    color:purple ;
+}
+p{
+    color: rebeccapurple;
+    font-size: x-large;
+}
+footer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: red;
+} 
+button{
+background:greenyellow;}
+button:hover{
+    background-color: green;
+}
+header{
+    background:darkblue;
+    color: white;
+}
+main{
+    margin: 20px 150px;
+    padding: 15px;
+    background-color: cornflowerblue;
+}
+article{
+    padding: 15px ;
+    background:aqua;
+}
+ul{
+    display:inline-flex;
+    gap: 50px;
+}
